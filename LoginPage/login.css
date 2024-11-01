@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 800;
+}
+.login-form{
+    border-radius: 10px;
+    width: 30%;
+    border: 2px solid  #0000001a;
+    box-shadow: #0000001a 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 1.2em;
+    padding: 1.2em;
+}
+label{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.signin{
+    font-size: 1.3em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="text"]{
+    width: 100%;
+    height: 2em;
+    height: 2em;
+}
+
+input[type="submit"]{
+    height: 2em;
+    background-color: gold;
+    border-radius: 10px;
+    border-color: gold;
+    color: #fff;
+}
+input[type="button"]{
+    height: 2em;
+    margin: 4px;
+    box-shadow: 5px 5px 5px #f5f0e4;
+}
+
+@media screen and (max-width:500px) {
+    .login-form{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:750px) {
+    .login-form{
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:1199px) {
+    .login-form{
+        width: 40%;
+    }
+}
+

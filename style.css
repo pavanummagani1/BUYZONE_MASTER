@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    background-color: #0f1111;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+/* HAMBURGER */
+.hamburger {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+}
+
+/* ADDRESS */
+.Address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.deliver {
+    color: #817e7e;
+    font-size: 16px;
+}
+
+.location {
+    font-weight: 600;
+}
+
+/* SEARCH BAR */
+.searchbar {
+    height: 2.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.height {
+    height: 100%;
+}
+
+.searchDropdown {
+    text-align: center;
+    width: 10%;
+}
+
+.search {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.searchIcon {
+    font-size: 1.5em;
+    padding: 5px;
+    /* text-align: center; */
+    background-color: #f6d663;
+    color: #000;
+    width: 10%;
+}
+
+/* Language*/
+.language {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.flagIMG {
+    width: 2.2em;
+    height: 1.3em;
+}
+
+.return {
+    width: 4em;
+}
+
+.return::first-line {
+    font-size: 1em;
+}
+.cart{
+    font-size: 1.2em;
+    display: flex;
+}
+.usericon{
+    /* color: #fff; */
+    height: 30px;
+    width: 30px;
+    /* background-color: #fff; */
+}
+.userlogin{
+    display: none;
+}
+.loginbar{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    right: 10px;
+    top: 62px;
+}
+.signin-btn{
+    background-color: #f6d663;
+    color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    border-color: #f6d663;
+    border-radius: 10px;
+}
+.loginbar>a{
+    text-decoration: none;
+    color: #000;
+}
+
+#loginbox{
+    display: none;
+}
+#loginbox:checked~.loginbar{
+    display: flex;
+}
+
+.sidebar{
+    display: none;
+    background-color: #817e7e;
+    color: #fff;
+    padding: 20px;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    height: fit-content;
+}
+.side-user{
+    display: flex;
+    align-items: center;
+    background-color: #0f1111;
+    gap: 10px;
+}
+.sidebar-section{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title{
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px;
+}
+#hamCheckbox{
+display: none;
+}
+#hamCheckbox:checked~.sidebar{
+    display: flex;
+}
+@media screen and (min-width:1000px) and (max-width:1199px) {
+    .Address{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:751px) and (max-width:999px){
+    .userlogin{
+        display: flex;
+    }
+    .Address, .return, .userDetails{
+        display: none;
+    }
+    .searchbar{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:750px) {
+    .Address, .return, .userDetails, .language, .cart>p{
+        display: none;
+    }
+    .userlogin{
+        display: flex;
+    }
+    #loginbox:checked~.loginbar{
+        display: flex;
+    }
+    .searchbar{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .logo, .Address, .return, .userDetails, .language, .cart>p{
+        display: none;
+    }
+    .userlogin{
+        display: flex;
+    }
+    #loginbox:checked~.loginbar{
+        display: flex;
+    }
+    .searchbar{
+        width: 60%;
+    }
+}

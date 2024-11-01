@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login to BUYZONE</title>
+</head>
+
+<body>
+    <section class="login-section">
+        <span class="logo">BUYZONE</span>
+        <div class="login-form">
+            <span class="signin">Sign In</span>
+            <form action="../index.html">
+                <!-- Email -->
+                 <div class="Email-section">
+                    <label for="Email">Enter Email to login</label> <br>
+                    <input type="text" id="Email" pattern="[a-z0-9.]+@(gmail|outlook|yahoo|gov|org|in)+\.[a-z]{2,}">
+                 </div>
+
+                <!-- Password -->
+                 <div class="password-section">
+                    <label for="Password">Password</label> <br>
+                    <input type="text" id="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[@$&!?]).{8,16}">
+                 </div>
+
+                <!--LOGIN BUTTON-->
+                <input type="submit" value="Login to BUYZONE"> <br>
+                <span class="agreement">By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </span> 
+                <input type="button" value="Forgot Password">
+            </form>
+        </div>
+        <input type="button" value="New to BUYZONE, Register Now">
+        <a href="../index.html"><input type="button" value="Back to HOME PAGE"></a>
+    </section>
+</body>
+
+</html>
