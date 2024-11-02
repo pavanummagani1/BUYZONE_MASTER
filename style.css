@@ -34,7 +34,10 @@ header {
     align-items: center;
     gap: 8px;
 }
-
+.address{
+    display: flex;
+    flex-direction: column;
+}
 .deliver {
     color: #817e7e;
     font-size: 16px;
@@ -99,6 +102,7 @@ header {
 .cart{
     font-size: 1.2em;
     display: flex;
+
 }
 .usericon{
     /* color: #fff; */
@@ -197,7 +201,7 @@ display: none;
 }
 
 @media screen and (min-width:501px) and (max-width:750px) {
-    .Address, .return, .userDetails, .language, .cart>p{
+    .Address, .return, .userDetails, .language, .cart>.cart-title{
         display: none;
     }
     .userlogin{
@@ -212,7 +216,7 @@ display: none;
 }
 
 @media screen and (max-width:500px){
-    .logo, .Address, .return, .userDetails, .language, .cart>p{
+    .logo, .Address, .return, .userDetails, .language, .cart>.cart-title{
         display: none;
     }
     .userlogin{
