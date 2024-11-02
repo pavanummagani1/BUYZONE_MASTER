@@ -102,6 +102,7 @@ header {
 .cart{
     font-size: 1.2em;
     display: flex;
+    gap: 0.3rem;
 
 }
 .usericon{
@@ -122,18 +123,23 @@ header {
     flex-direction: column;
     gap: 6px;
     position: absolute;
-    right: 10px;
-    top: 62px;
+    right: 20%;
+    top: 100%;
+    z-index: 1;
 }
-.signin-btn{
+.button{
+    display: inline-block;
     background-color: #f6d663;
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     font-weight: 700;
     border-color: #f6d663;
     border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
-.loginbar>a{
+.login-links{
     text-decoration: none;
     color: #000;
 }
@@ -141,6 +147,7 @@ header {
 #loginbox{
     display: none;
 }
+
 #loginbox:checked~.loginbar{
     display: flex;
 }
@@ -156,6 +163,7 @@ header {
     top: 62px;
     left: 0px;
     height: fit-content;
+    z-index: 1;
 }
 .side-user{
     display: flex;
@@ -181,6 +189,8 @@ display: none;
 #hamCheckbox:checked~.sidebar{
     display: flex;
 }
+/* carousel CARD */
+
 @media screen and (min-width:1000px) and (max-width:1199px) {
     .Address{
         display: none;
