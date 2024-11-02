@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 
 /* HEADER */
 header {
@@ -190,6 +193,48 @@ display: none;
     display: flex;
 }
 /* carousel CARD */
+.carouselContainer{
+    border: 2px solid;
+    height: fit-content;
+    width: fit-content;
+    background-color: #fff;
+    padding: 20px;
+}
+.image{
+    border: 2px solid #000;
+    width: 100px;
+    height: 100px;
+    /* background-image: url('./Bikes/B-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.image>img{
+    width: 100%;
+    height: 100%;
+}
+.imageContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.carouselSection{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.card1{
+    background-color: #fff;
+}
+.image-container{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @media screen and (min-width:1000px) and (max-width:1199px) {
     .Address{
